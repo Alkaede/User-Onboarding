@@ -15,7 +15,7 @@ export default yup.object().shape({
       .string()
       .required("Password is required")
       .min(5, "Password must be 5 characters minimum"),
-    terms: yup.boolean().required(),
+    tos: yup.boolean().required(),
     button: yup.boolean(),
     role: yup.string().oneOf(['Student','Instructor'])
 }); 

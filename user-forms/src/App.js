@@ -16,7 +16,7 @@ const initialValues = {
   email:'',
   password:'',
   role:'',
-  terms: false
+  tos: false
 }
 
 const initialErrors ={
@@ -43,7 +43,7 @@ export default function App() {
         last_name:formValues.last_name.trim(),
         email:formValues.email.trim(),
         role:formValues.role.trim(),
-        terms:formValues.terms,
+        tos:formValues.tos,
         id:v4()
       }
       postDataInput(newDataInput)

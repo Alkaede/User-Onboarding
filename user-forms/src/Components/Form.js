@@ -73,10 +73,10 @@ export default function Form({values, onChange, newForm, disabled, errors}){
         </select>
       </label>
 
-        <div>{errors.terms}</div>
+        <div>{errors.tos}</div>
       <label>
         <details>
-          <summary>Terms of Service</summary>
+          <summary>tos of Service</summary>
             <TOS/>
         </details>
           <input
