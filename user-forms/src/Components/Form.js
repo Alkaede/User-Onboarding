@@ -4,8 +4,8 @@ import { TOS } from './ToS/ToS'
 import styled from 'styled-components'
 
 export default function Form({values, onChange, newForm, disabled, errors}){
-  const onSubmit = (event) => {
-      event.preventDefault()
+  const onSubmit = (e) => {
+      e.preventDefault()
       newForm()
   }
 
