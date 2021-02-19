@@ -5,4 +5,9 @@ p {
   padding: 10px;
   line-height: 1.6;
   color: black;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-weight: 500;
+  text-shadow: 2px 2px 5px white;
 }

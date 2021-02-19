@@ -1,10 +1,21 @@
-import * as yup from 'yup';
+import * as yup from "yup"
 
-
-let schema = yup.object().shape({
-  fname: yup.string().required('First name is required.').trim(),
-  lname: yup.string().required('Last name is required.').trim(),
-  email: yup.email().required(),
-  password: yup.string().required(),
-  tos: yup.isType()
-})
+export default yup.object().shape({
+    first_name: yup
+      .string()
+      .required("Name is required"),
+    last_name  : yup
+      .string()
+      .required("Last name is required"),
+    email: yup
+      .string()
+      .email("Must be a valid email address")
+      .required("Email is required"),
+    password: yup
+      .string()
+      .required("Password is required")
+      .min(5, "Password must be 5 characters minimum"),
+    terms: yup.boolean().required(),
+    button: yup.boolean(),
+    role: yup.string().oneOf(['Student','Instructor'])
+}); 
